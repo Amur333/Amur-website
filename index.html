@@ -1,20 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amur Enterprises | Premium Custom Fightwear</title>
+  <title>Amur Enterprises | Premium Custom Fightwear Manufacturer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; background: #0f0f0f; color: #fff; }
-    header { background: #1a1a1a; padding: 20px; text-align: center; }
-    header img { height: 60px; }
-    nav { background: #111; display: flex; justify-content: center; gap: 30px; padding: 15px 0; }
-    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    body { font-family: 'Inter', sans-serif; background: #0f0f0f; color: #fff; line-height: 1.6; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: #1a1a1a; position: sticky; top: 0; z-index: 999; }
+    header img { height: 50px; }
+    nav a { margin-left: 25px; color: #fff; text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
     nav a:hover { color: #e63946; }
-    .slider { position: relative; max-width: 100%; overflow: hidden; }
+    .slider { position: relative; height: 90vh; overflow: hidden; }
     .slides { display: flex; width: 400%; animation: slide 20s infinite; }
-    .slides img { width: 100%; height: 85vh; object-fit: cover; }
+    .slides img { width: 100vw; height: 90vh; object-fit: cover; }
     @keyframes slide {
       0% { transform: translateX(0); }
       25% { transform: translateX(-100%); }
@@ -22,49 +23,46 @@
       75% { transform: translateX(-300%); }
       100% { transform: translateX(0); }
     }
-    .hero-text {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      text-align: center;
-      transform: translateY(-50%);
-      font-size: 2.2rem;
-      font-weight: bold;
-      background: rgba(0,0,0,0.4);
-      color: #fff;
-      padding: 10px;
+    .hero-overlay {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5); display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center; padding: 20px;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
+    .hero-overlay h1 { font-size: 3rem; color: #fff; margin-bottom: 10px; }
+    .hero-overlay p { font-size: 1.2rem; color: #ddd; margin-bottom: 20px; max-width: 600px; }
+    .hero-overlay a { background: #e63946; color: #fff; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 4px; }
+    section { padding: 60px 40px; }
+    .section-title { font-size: 2rem; color: #e63946; margin-bottom: 30px; text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #1a1a1a; padding: 20px; border-radius: 10px; text-align: center; }
+    .card h3 { margin-bottom: 10px; color: #fff; }
+    .card p { color: #bbb; }
+    footer { background: #111; color: #aaa; padding: 30px; text-align: center; }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Amur Enterprises Logo" />
+    <img src="logo.png" alt="Amur Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#customization">Customization</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Customization</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
   <div class="slider">
     <div class="slides">
-      <img src="banner1.jpg" alt="Fighters in Kimonos" />
-      <img src="banner2.jpg" alt="Apparel Showcase" />
-      <img src="banner3.jpg" alt="Boxing Equipment" />
-      <img src="banner4.jpg" alt="Sports Uniforms" />
+      <img src="banner1.jpg" alt="Fighters in Kimonos">
+      <img src="banner2.jpg" alt="Apparel Showcase">
+      <img src="banner3.jpg" alt="Boxing Equipment">
+      <img src="banner4.jpg" alt="Sports Uniforms">
     </div>
-    <div class="hero-text">Premium Custom Fightwear Manufacturer</div>
+    <div class="hero-overlay">
+      <h1>Premium Custom Fightwear Manufacturer</h1>
+      <p>We craft world-class BJJ Gis, rash guards, MMA shorts, and sportswear — fully customizable with your logo.</p>
+      <a href="#contact">Get a Quote</a>
+    </div>
   </div>
-  <footer>
-    &copy; 2025 Amur Enterprises | Contact: amurenterprises@gmail.com | WhatsApp: +92 310 7675744
-  </footer>
 </body>
 </html>
